@@ -1,5 +1,6 @@
 import { useState } from "react";
 import Bio from "./Bio";
+import StatCard from "./StatCard";
 
 function Profile() {
 
