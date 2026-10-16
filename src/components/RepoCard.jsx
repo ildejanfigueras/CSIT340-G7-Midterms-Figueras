@@ -1,5 +1,22 @@
 function RepoCard(props){
 
+const [portfolioStars, setPortfolioStars] = useState(0);
+  const [todoStars, setTodoStars] = useState(0);
+  const [dotfilesStars, setDotfilesStars] = useState(0);
+
+
+  function handleStarPortfolio() {
+    setPortfolioStars(portfolioStars + 1);
+  }
+
+  function handleStarTodo() {
+    setTodoStars(todoStars + 1);
+  }
+
+  function handleStarDotfiles() {
+    setDotfilesStars(dotfilesStars + 1);
+  }
+
 return(
     <><div className="rounded-xl border-2 border-[#222222] p-8">
         <div className="flex items-center justify-between">
